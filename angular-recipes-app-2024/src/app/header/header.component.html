@@ -1,9 +1,10 @@
 <nav class="navbar navbar-default">
-    <div class="container-fuid">
+    <div class="container-fluid">
         <div class="navbar-header">
             <a class = "navbar-brand" href="#">Recipe Book</a>
         </div>
-        <div class="collapse navbar-collapse " >
+        <!-- <div class="collapse navbar-collapse " > -->
+        <div class="navbar-default " >
             <ul class="nav navbar-nav ">
                 <li *ngIf="isLoggedIn" routerLinkActive="active"><a routerLink="/recipes" >Recipes</a></li>
                 <li *ngIf="!isLoggedIn" routerLinkActive="active"><a routerLink="/auth">Authentication</a></li>
